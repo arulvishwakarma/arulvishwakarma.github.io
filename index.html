@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Arul Vishwakarma - Analytics Professional</title>
+  <title>Arul Vishwakarma - CRM &amp; Analytics Professional</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
@@ -17,7 +17,6 @@
 }
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);line-height:1.65;overflow-x:hidden}
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between;transition:background .3s,box-shadow .3s}
 nav.scrolled{background:var(--white);box-shadow:0 2px 16px rgba(31,62,107,.10)}
 .nav-logo{font-family:'Poppins',sans-serif;font-weight:700;font-size:1.1rem;color:#fff;text-decoration:none;transition:color .3s}
@@ -29,7 +28,6 @@ nav.scrolled .nav-links a{color:var(--gray-700)}
 nav.scrolled .nav-links a:hover{color:var(--blue)}
 .nav-cta{background:var(--gold);color:#fff!important;padding:.45rem 1.1rem;border-radius:6px;font-weight:600!important}
 nav.scrolled .nav-cta{background:var(--navy)}
-/* HERO */
 #hero{min-height:100vh;background:linear-gradient(135deg,#1F3E6B 0%,#2D5A9E 50%,#1A3A6B 100%);display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden}
 #hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(46,117,182,.25) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
 .hero-inner{position:relative;z-index:1;max-width:780px}
@@ -51,15 +49,13 @@ nav.scrolled .nav-cta{background:var(--navy)}
 .scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.45);font-size:.75rem;display:flex;flex-direction:column;align-items:center;gap:.4rem}
 .scroll-arrow{width:20px;height:20px;border-right:2px solid rgba(255,255,255,.4);border-bottom:2px solid rgba(255,255,255,.4);transform:rotate(45deg);animation:bounce 1.6s infinite}
 @keyframes bounce{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(5px)}}
-/* SECTIONS */
 section{padding:5rem 2rem}
 .section-inner{max-width:1060px;margin:0 auto}
 .section-label{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:.5rem}
 .section-title{font-family:'Poppins',sans-serif;font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;color:var(--navy);margin-bottom:1.5rem;line-height:1.2}
-.section-desc{font-size:1rem;color:var(--gray-500);max-width:620px;margin-bottom:3rem}
+.section-desc{font-size:1rem;color:var(--gray-500);max-width:640px;margin-bottom:3rem}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
 .reveal.visible{opacity:1;transform:none}
-/* ABOUT */
 #about{background:var(--off-white)}
 .about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:4rem;align-items:start}
 .about-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:2rem;text-align:center}
@@ -74,7 +70,6 @@ section{padding:5rem 2rem}
 .highlight-chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
 .chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--navy);color:#fff;font-size:.78rem;font-weight:500;padding:.4rem .9rem;border-radius:100px}
 .chip-dot{width:6px;height:6px;border-radius:50%;background:var(--gold-light)}
-/* SKILLS */
 #skills{background:#fff}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
 .skill-group{background:var(--off-white);border-radius:var(--radius);padding:1.5rem;border:1px solid var(--gray-200)}
@@ -83,7 +78,6 @@ section{padding:5rem 2rem}
 .pill{background:#fff;border:1px solid var(--gray-200);color:var(--gray-700);font-size:.8rem;font-weight:500;padding:.35rem .85rem;border-radius:100px;transition:border-color .2s,color .2s}
 .pill:hover{border-color:var(--blue);color:var(--blue)}
 .pill-star{border-color:var(--blue);color:var(--blue);background:#E8F0F9}
-/* EXPERIENCE */
 #experience{background:var(--off-white)}
 .timeline{position:relative;padding-left:2.5rem}
 .timeline::before{content:'';position:absolute;left:.65rem;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--blue) 0%,var(--gray-200) 100%)}
@@ -100,8 +94,8 @@ section{padding:5rem 2rem}
 .tl-bullets li{font-size:.875rem;color:var(--gray-700);padding-left:1.25rem;position:relative;margin-bottom:.5rem;line-height:1.55}
 .tl-bullets li::before{content:'\25B8';position:absolute;left:0;color:var(--blue);font-size:.75rem;top:.1em}
 .tl-card-gold .tl-bullets li::before{color:var(--gold)}
-.impact-badge{display:inline-block;background:linear-gradient(90deg,var(--gold),var(--gold-light));color:#fff;font-size:.72rem;font-weight:700;padding:.25rem .75rem;border-radius:100px;margin-top:.75rem}
-/* PROJECTS */
+.award-note{font-size:.8rem;color:#9A6F00;font-style:italic;margin-top:.75rem;padding:.5rem .75rem;background:#FDF4D8;border-radius:6px;border-left:3px solid var(--gold)}
+.context-note{font-size:.8rem;color:var(--gray-500);font-style:italic;margin-top:.75rem;padding:.5rem .75rem;background:var(--gray-100);border-radius:6px}
 #projects{background:#fff}
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
 .proj-card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:2rem;transition:box-shadow .2s,transform .2s;position:relative;overflow:hidden}
@@ -114,15 +108,13 @@ section{padding:5rem 2rem}
 .metric{background:var(--gray-100);color:var(--navy);font-size:.72rem;font-weight:700;padding:.3rem .75rem;border-radius:6px}
 .proj-stack{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
 .stack-tag{font-size:.7rem;color:var(--blue);background:#E8F0F9;padding:.2rem .55rem;border-radius:4px;font-weight:500}
-/* AWARDS */
 #awards{background:linear-gradient(135deg,#1F3E6B 0%,#2D5A9E 100%);padding:4rem 2rem}
 .awards-grid{display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center}
-.award-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:2rem;text-align:center;flex:1;min-width:200px;max-width:260px}
+.award-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:2rem;text-align:center;flex:1;min-width:200px;max-width:280px}
 .award-icon{font-size:2.5rem;margin-bottom:1rem;display:block}
 .award-title{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:.5rem}
-.award-org{font-size:.8rem;color:rgba(255,255,255,.65)}
+.award-org{font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.5}
 .award-year{display:inline-block;margin-top:.75rem;font-size:.72rem;font-weight:700;color:var(--gold-light);background:rgba(191,143,0,.2);padding:.2rem .6rem;border-radius:100px}
-/* EDUCATION */
 #education{background:var(--off-white)}
 .edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
 .edu-card{background:#fff;border-radius:var(--radius);padding:1.75rem;box-shadow:var(--shadow);display:flex;gap:1.25rem;align-items:flex-start}
@@ -130,7 +122,7 @@ section{padding:5rem 2rem}
 .edu-degree{font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.25rem}
 .edu-school{font-size:.8rem;color:var(--blue);font-weight:600}
 .edu-year{font-size:.75rem;color:var(--gray-500);margin-top:.25rem}
-/* CONTACT */
+.edu-note{font-size:.75rem;color:var(--gray-500);margin-top:.5rem;font-style:italic}
 #contact{background:linear-gradient(135deg,#1F3E6B 0%,#1A3A6B 100%);padding:5rem 2rem;text-align:center}
 #contact .section-label{color:var(--gold-light)}
 #contact .section-title{color:#fff;margin-bottom:1rem}
@@ -159,16 +151,15 @@ footer span{color:var(--gold-light)}
     </ul>
   </nav>
 
-  <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
-      <div class="hero-badge">Analytics &middot; CRM &middot; Business Intelligence</div>
+      <div class="hero-badge">CRM Analytics &middot; Customer Retention &middot; Beauty &amp; Fashion eCommerce</div>
       <h1 class="hero-name">Arul <span>Vishwakarma</span></h1>
-      <p class="hero-title">Senior CRM &amp; Analytics Professional &mdash; Turning customer data into revenue growth</p>
+      <p class="hero-title">CRM &amp; Customer Retention Analytics Professional &mdash; Beauty &amp; Fashion | 5.3+ Years</p>
       <div class="hero-stats">
         <div class="stat"><div class="stat-num">5.3+</div><div class="stat-label">Years Experience</div></div>
         <div class="stat-divider"></div>
-        <div class="stat"><div class="stat-num">5M+</div><div class="stat-label">Customers Impacted</div></div>
+        <div class="stat"><div class="stat-num">5M+</div><div class="stat-label">Loyalty Customers</div></div>
         <div class="stat-divider"></div>
         <div class="stat"><div class="stat-num">7%</div><div class="stat-label">Conversion Uplift</div></div>
         <div class="stat-divider"></div>
@@ -181,8 +172,6 @@ footer span{color:var(--gold-light)}
     </div>
     <div class="scroll-hint"><span>Scroll</span><div class="scroll-arrow"></div></div>
   </section>
-
-  <!-- ABOUT -->
   <section id="about">
     <div class="section-inner">
       <div class="about-grid reveal">
@@ -190,247 +179,234 @@ footer span{color:var(--gold-light)}
           <div class="about-card">
             <div class="avatar">AV</div>
             <h3>Arul Vishwakarma</h3>
-            <p>Senior Analyst &mdash; CRM &amp; Analytics</p>
+            <p>CRM &amp; Customer Retention Analyst</p>
             <div class="card-tags">
               <span class="tag tag-blue">Open to Work</span>
-              <span class="tag tag-gold">India / Gulf</span>
-              <span class="tag">Immediate Joiner</span>
+              <span class="tag tag-gold">India &amp; Gulf</span>
+              <span class="tag">30-Day Notice</span>
             </div>
           </div>
         </div>
         <div class="about-text">
           <div class="section-label">About Me</div>
-          <h2 class="section-title">Data-driven storyteller who builds campaigns that convert</h2>
-          <p>Senior CRM &amp; Analytics professional with 5.3+ years designing customer journeys, building lifecycle campaigns, and translating behavioral data into revenue outcomes across e-commerce, travel, and fintech.</p>
-          <p>At Snapdeal and OYO Rooms I led end-to-end CRM strategy for 5M+ users &mdash; segmentation, A/B testing, and automation via MoEngage, CleverTap, and Salesforce Marketing Cloud. Results: 7% conversion lift on lapsed-buyer campaigns, 15% email open-rate increase, 10&ndash;12% repeat-purchase uplift.</p>
-          <p>Deep analytical toolkit: SQL, Python (pandas, scikit-learn), Power BI, Tableau. Comfortable owning both strategy and dashboards.</p>
+          <h2 class="section-title">Turning customer data into retention, revenue, and loyalty</h2>
+          <p>Results-driven CRM &amp; Customer Retention Analytics professional with 5.3+ years in high-growth Beauty and Fashion eCommerce. Currently at <strong>Reliance Retail &ndash; Tira Beauty</strong>, one of India's largest omnichannel beauty retailers, designing end-to-end CRM campaigns and data pipelines that drive measurable conversion and retention outcomes.</p>
+          <p>Previously at <strong>Myntra (Flipkart Group)</strong>, I managed analytics for a 5 Million+ loyalty customer base &mdash; delivering 12&ndash;15% sustained MAU growth and earning the Make It Happen Award from the Marketing Head. At <strong>Landmark Group</strong> (GCC-headquartered), I led marketing analytics for the Homebox brand and improved ROAS by 5%.</p>
+          <p>I am equally comfortable building Python pipelines and BigQuery dashboards as presenting retention strategy to senior stakeholders. Open to roles across India and the GCC region.</p>
           <div class="highlight-chips">
             <span class="chip"><span class="chip-dot"></span>CRM Strategy</span>
-            <span class="chip"><span class="chip-dot"></span>Customer Lifecycle</span>
-            <span class="chip"><span class="chip-dot"></span>A/B Testing</span>
             <span class="chip"><span class="chip-dot"></span>Cohort Analysis</span>
+            <span class="chip"><span class="chip-dot"></span>A/B Testing</span>
+            <span class="chip"><span class="chip-dot"></span>Funnel Analytics</span>
             <span class="chip"><span class="chip-dot"></span>CLV Modeling</span>
-            <span class="chip"><span class="chip-dot"></span>Marketing Automation</span>
+            <span class="chip"><span class="chip-dot"></span>Omnichannel CRM</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section id="skills">
     <div class="section-inner">
       <div class="reveal">
         <div class="section-label">Capabilities</div>
         <h2 class="section-title">Skills &amp; Tools</h2>
-        <p class="section-desc">Full-stack analytics toolkit spanning strategy, execution, and visualization.</p>
+        <p class="section-desc">Full-stack analytics toolkit spanning campaign execution, data engineering, and visualization.</p>
       </div>
       <div class="skills-grid reveal">
         <div class="skill-group">
-          <div class="skill-group-title">CRM &amp; Marketing Automation</div>
+          <div class="skill-group-title">Analytics &amp; Methods</div>
           <div class="skill-pills">
-            <span class="pill pill-star">MoEngage</span><span class="pill pill-star">CleverTap</span>
-            <span class="pill pill-star">Salesforce MC</span><span class="pill">WebEngage</span>
-            <span class="pill">Customer.io</span><span class="pill">HubSpot</span>
+            <span class="pill pill-star">CRM Analytics</span><span class="pill pill-star">Cohort Analysis</span>
+            <span class="pill pill-star">A/B Testing</span><span class="pill">Funnel Analytics</span>
+            <span class="pill">CLV Modeling</span><span class="pill">Root Cause Analysis</span>
+            <span class="pill">Customer Segmentation</span><span class="pill">Omnichannel Analytics</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-title">Analytics &amp; Data</div>
+          <div class="skill-group-title">Languages &amp; Databases</div>
           <div class="skill-pills">
             <span class="pill pill-star">SQL (Advanced)</span><span class="pill pill-star">Python</span>
-            <span class="pill">pandas</span><span class="pill">scikit-learn</span>
-            <span class="pill">Excel / Sheets</span><span class="pill">Google Analytics</span>
+            <span class="pill pill-star">Google BigQuery</span><span class="pill">Databricks</span>
+            <span class="pill">T-SQL / DAX</span><span class="pill">RDBMS</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-title">Visualization &amp; BI</div>
+          <div class="skill-group-title">BI &amp; Visualization</div>
           <div class="skill-pills">
-            <span class="pill pill-star">Power BI</span><span class="pill pill-star">Tableau</span>
-            <span class="pill">Looker Studio</span><span class="pill">Mixpanel</span><span class="pill">Amplitude</span>
+            <span class="pill pill-star">Looker Studio</span><span class="pill pill-star">Amplitude</span>
+            <span class="pill pill-star">Power BI</span><span class="pill">Tableau</span>
+            <span class="pill">Google Analytics 360</span><span class="pill">MS Excel</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-title">Strategy &amp; Methods</div>
+          <div class="skill-group-title">Marketing &amp; CRM</div>
           <div class="skill-pills">
-            <span class="pill pill-star">Customer Segmentation</span><span class="pill pill-star">A/B Testing</span>
-            <span class="pill">RFM Modeling</span><span class="pill">CLV Modeling</span>
-            <span class="pill">Churn Prediction</span><span class="pill">Funnel Analysis</span><span class="pill">Cohort Analysis</span>
+            <span class="pill pill-star">Campaign Analytics</span><span class="pill pill-star">ROAS Measurement</span>
+            <span class="pill">Retention Strategy</span><span class="pill">Loyalty Analytics</span>
+            <span class="pill">Push / Email / SMS / WhatsApp</span><span class="pill">SAS</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-title">Channels</div>
+          <div class="skill-group-title">Python Libraries</div>
           <div class="skill-pills">
-            <span class="pill">Email Marketing</span><span class="pill">Push Notifications</span>
-            <span class="pill">WhatsApp</span><span class="pill">SMS</span><span class="pill">In-App</span><span class="pill">Retargeting</span>
+            <span class="pill">pandas</span><span class="pill">NumPy</span>
+            <span class="pill">scikit-learn</span><span class="pill">Matplotlib</span>
+            <span class="pill">Data Pipelines</span>
           </div>
         </div>
         <div class="skill-group">
           <div class="skill-group-title">Soft Skills</div>
           <div class="skill-pills">
             <span class="pill">Stakeholder Management</span><span class="pill">Cross-functional Collaboration</span>
-            <span class="pill">Root Cause Analysis</span><span class="pill">Presentation</span>
+            <span class="pill">Root Cause Analysis</span><span class="pill">KPI Reporting</span><span class="pill">Mentoring</span>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- EXPERIENCE -->
   <section id="experience">
     <div class="section-inner">
       <div class="reveal">
         <div class="section-label">Career</div>
         <h2 class="section-title">Work Experience</h2>
-        <p class="section-desc">5+ years across e-commerce, travel, and maritime &mdash; always centered on customer data and revenue outcomes.</p>
+        <p class="section-desc">5.3+ years in Beauty &amp; Fashion eCommerce analytics, preceded by 8+ years as an Electro-Technical Officer in international merchant shipping.</p>
       </div>
       <div class="timeline">
         <div class="tl-item reveal">
           <div class="tl-dot"></div>
           <div class="tl-card">
             <div class="tl-meta">
-              <div><div class="tl-company">Snapdeal</div><div class="tl-role">Senior Analyst &mdash; CRM &amp; Retention</div></div>
-              <div class="tl-period">Apr 2023 &mdash; Present &middot; Gurugram</div>
+              <div><div class="tl-company">Reliance Retail &ndash; Tira Beauty</div><div class="tl-role">CRM &amp; Customer Retention Analyst</div></div>
+              <div class="tl-period">May 2024 &mdash; Present</div>
             </div>
             <ul class="tl-bullets">
-              <li>Led end-to-end lifecycle CRM for 5M+ active buyers across MoEngage and Salesforce MC &mdash; email, push, WhatsApp, in-app channels.</li>
-              <li>Ran 50+ A/B tests on send-time, subject lines, and creative; lifted email open rates 15% and reduced unsubscribes 8%.</li>
-              <li>Built lapsed-buyer win-back flow improving conversion 7% within 60 days; root cause identified via RFM cohort analysis.</li>
-              <li>Developed real-time retention dashboards in Power BI used daily by product, growth, and marketing leadership.</li>
-              <li>Automated campaign reporting that previously took 3 analyst-hours per week; reclaimed time redirected to segmentation experiments.</li>
+              <li>Design and execute omnichannel CRM campaigns (Push, Email, SMS, WhatsApp) using behavioral cohort analysis and customer segmentation.</li>
+              <li>Developed unbiased A/B test frameworks for CRM strategies, generating a 7% increase in overall conversions with defined Test &amp; Control methodology.</li>
+              <li>Built scalable data pipelines and dashboards in Python, Google BigQuery, and Looker Studio to track mid-to-bottom funnel performance.</li>
+              <li>Developed end-to-end funnel analytics model (Users &rarr; Sessions &rarr; PLP &rarr; PDP &rarr; Checkout &rarr; Payment) to diagnose drop-offs and enhance conversion rates.</li>
+              <li>Improved campaign efficiency by 6% and repeat purchase rate / revenue per user by 3% through data-led insights delivered to marketing and retention teams.</li>
             </ul>
-            <span class="impact-badge">7% Conversion Uplift &bull; 15% Open Rate Lift</span>
+            <div class="award-note">&#127942; On Spot Award (Nov 2024) &mdash; Reliance Group, awarded by Head of Planning &amp; Intelligence, for designing robust pipelines handling complex and rogue data.</div>
           </div>
         </div>
         <div class="tl-item reveal">
           <div class="tl-dot"></div>
           <div class="tl-card">
             <div class="tl-meta">
-              <div><div class="tl-company">OYO Rooms</div><div class="tl-role">CRM Analyst &mdash; Customer Lifecycle</div></div>
-              <div class="tl-period">Jun 2021 &mdash; Mar 2023 &middot; Gurugram</div>
+              <div><div class="tl-company">Landmark Group &ndash; Homebox Brand</div><div class="tl-role">Business Analyst</div></div>
+              <div class="tl-period">Sep 2023 &mdash; Feb 2024</div>
             </div>
             <ul class="tl-bullets">
-              <li>Designed multi-channel lifecycle campaigns via CleverTap and WebEngage targeting post-booking, mid-stay, and post-stay moments.</li>
-              <li>Implemented behavioural segmentation by booking frequency, recency, and property category &mdash; drove 12% repeat booking uplift.</li>
-              <li>Operationalized a churn-prediction model with data science; translated outputs into targeted re-engagement journeys.</li>
-              <li>Reported weekly CRM KPIs (CTR, conversion, revenue per campaign) to senior leadership via Tableau dashboards.</li>
+              <li>Built Looker Studio dashboards for New vs. Repeat customer tracking and coupon performance analysis within cohorts and campaigns.</li>
+              <li>Led Homebox Brand Marketing Analytics; designed customer cohorts aligned to marketing campaigns using SAS.</li>
+              <li>Measured and optimized ROAS across multiple campaigns, achieving 7% improvement in marketing efficiency and 5% higher ROAS within budget constraints.</li>
+              <li>Strategized targeting techniques and designed audience bases to maximize campaign ROI across digital and offline channels.</li>
             </ul>
-            <span class="impact-badge">12% Repeat Booking Uplift</span>
+            <div class="context-note">Landmark Group is GCC-headquartered &mdash; this role provided direct exposure to Gulf market dynamics, customer behavior, and regional campaign structures.</div>
           </div>
         </div>
         <div class="tl-item reveal">
           <div class="tl-dot"></div>
           <div class="tl-card">
             <div class="tl-meta">
-              <div><div class="tl-company">Convergent</div><div class="tl-role">Business Analyst &mdash; Marketing &amp; CRM</div></div>
-              <div class="tl-period">Aug 2020 &mdash; May 2021 &middot; Noida</div>
+              <div><div class="tl-company">Myntra (Flipkart Group)</div><div class="tl-role">Data Analyst &mdash; Marketing &amp; Loyalty</div></div>
+              <div class="tl-period">Aug 2020 &mdash; Sep 2023</div>
             </div>
             <ul class="tl-bullets">
-              <li>Analyzed campaign performance across email and SMS; built funnel reports identifying 22% checkout drop-off resolved via abandonment sequence.</li>
-              <li>Maintained SQL-based customer data pipelines feeding weekly executive dashboards.</li>
-              <li>Instrumented Mixpanel event tracking for a new loyalty feature rollout with the product team.</li>
+              <li>Optimized marketing channel mix to deliver 12&ndash;15% sustained growth in Monthly Active Users (MAU) over six months.</li>
+              <li>Designed engagement analytics for Loyalty Programme (5 Million+ high-value customers), improving monthly visit rate by 7%.</li>
+              <li>Planned and monitored KPIs: Visit Rate, Revenue Per Customer, Repeat Rate, DAU/MAU across the loyalty customer base.</li>
+              <li>Built customer acquisition targeting frameworks using behavioral cohort similarity models.</li>
+              <li>Trained new analytical hires on SQL, Python, and BI tools, accelerating time-to-productivity.</li>
             </ul>
+            <div class="award-note">&#127942; Make It Happen Award (Jun 2023) &mdash; Awarded by Marketing Head, Myntra, for identifying breakages in the customer funnel and maintaining comprehensive KPI tracking.</div>
           </div>
         </div>
         <div class="tl-item reveal">
           <div class="tl-dot tl-dot-gold"></div>
           <div class="tl-card tl-card-gold">
             <div class="tl-meta">
-              <div><div class="tl-company">Anglo Eastern Ship Management</div><div class="tl-role">Management Trainee &mdash; Fleet Analytics</div></div>
-              <div class="tl-period">2019 &mdash; 2020 &middot; Mumbai</div>
+              <div><div class="tl-company">Anglo Eastern Ship Management</div><div class="tl-role">Electro-Technical Officer (ETO)</div></div>
+              <div class="tl-period">Oct 2010 &mdash; Mar 2019</div>
             </div>
             <ul class="tl-bullets">
-              <li>Fleet performance reporting &mdash; fuel consumption, voyage efficiency, and maintenance KPIs across 30+ vessels.</li>
-              <li>Built Excel dashboards and automated monthly reports, reducing preparation time by 40%.</li>
+              <li>Led electrical maintenance on international merchant vessels; progressed from Trainee ETO to Head of Electrical Department.</li>
+              <li>Implemented preventive maintenance schedules and safety protocols per international maritime standards (SOLAS, ISM Code).</li>
+              <li>Operated in high-pressure multinational environments across international voyages, developing systematic problem-solving and adaptability.</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- PROJECTS -->
   <section id="projects">
     <div class="section-inner">
       <div class="reveal">
         <div class="section-label">Projects</div>
-        <h2 class="section-title">Selected Work</h2>
-        <p class="section-desc">Analytical projects combining customer insight with measurable business outcomes.</p>
+        <h2 class="section-title">Key Projects</h2>
+        <p class="section-desc">Data engineering and analytics projects delivering measurable retention and conversion outcomes at Tira and Myntra.</p>
       </div>
       <div class="projects-grid">
         <div class="proj-card reveal">
+          <span class="proj-icon">&#128202;</span>
+          <div class="proj-title">Funnel Drop-off Root Cause Engine</div>
+          <p class="proj-desc">Automated root cause analysis system using event-level data and cohort segmentation to diagnose conversion drop-offs at every funnel stage. Identified key drivers: page load delays, pricing inconsistencies, and traffic quality issues.</p>
+          <div class="proj-metrics">
+            <span class="metric">5&ndash;7% Funnel Uplift</span><span class="metric">Event-level RCA</span><span class="metric">Automated System</span>
+          </div>
+          <div class="proj-stack">
+            <span class="stack-tag">Python</span><span class="stack-tag">BigQuery</span><span class="stack-tag">Looker Studio</span><span class="stack-tag">Cohort Analysis</span>
+          </div>
+        </div>
+        <div class="proj-card reveal">
           <span class="proj-icon">&#128200;</span>
-          <div class="proj-title">CLV &amp; Churn Prediction Model</div>
-          <p class="proj-desc">End-to-end CLV and churn propensity model for Snapdeal. Gradient-boosted trees on 18 months of purchase, browsing, and support data. Outputs fed into MoEngage segmentation for win-back campaigns.</p>
+          <div class="proj-title">CLV Prediction &amp; High-LTV Growth</div>
+          <p class="proj-desc">Built a 90-day Customer Lifetime Value model using transaction, behavioral, and CRM engagement data. Prioritized high-LTV cohorts for WhatsApp and notification campaigns, reducing spend on low-value segments.</p>
           <div class="proj-metrics">
-            <span class="metric">12% Churn Reduction</span><span class="metric">18-month Dataset</span><span class="metric">Top-10% Targeting</span>
+            <span class="metric">~9% Campaign ROI Uplift</span><span class="metric">90-day CLV Model</span><span class="metric">High-LTV Targeting</span>
           </div>
           <div class="proj-stack">
-            <span class="stack-tag">Python</span><span class="stack-tag">scikit-learn</span><span class="stack-tag">SQL</span><span class="stack-tag">MoEngage API</span>
+            <span class="stack-tag">Python</span><span class="stack-tag">SQL</span><span class="stack-tag">BigQuery</span><span class="stack-tag">CRM Platforms</span>
           </div>
         </div>
         <div class="proj-card reveal">
-          <span class="proj-icon">&#127981;</span>
-          <div class="proj-title">Lapsed Buyer Reactivation Engine</div>
-          <p class="proj-desc">6-touch reactivation journey for buyers dormant 90-180 days at Snapdeal. Segments from RFM scoring; content personalised by last-purchase category. Achieved 7% conversion in 60 days (~INR 1.2 Cr GMV).</p>
+          <span class="proj-icon">&#128101;</span>
+          <div class="proj-title">Customer Retention &amp; Growth Framework</div>
+          <p class="proj-desc">Analytical framework targeting new and repeat customers using behavioral similarity patterns. Aligned cross-functional stakeholders on unified KPI targets: Visit Rate, Revenue Per Customer, Retention Rate, and DAU/MAU.</p>
           <div class="proj-metrics">
-            <span class="metric">7% Conversion Rate</span><span class="metric">INR 1.2 Cr GMV</span><span class="metric">6-Touch Journey</span>
+            <span class="metric">12&ndash;15% MAU Growth</span><span class="metric">5M+ Customers</span><span class="metric">7% Visit Rate Uplift</span>
           </div>
           <div class="proj-stack">
-            <span class="stack-tag">MoEngage</span><span class="stack-tag">SQL</span><span class="stack-tag">A/B Testing</span><span class="stack-tag">Power BI</span>
-          </div>
-        </div>
-        <div class="proj-card reveal">
-          <span class="proj-icon">&#128179;</span>
-          <div class="proj-title">CRM Retention Analytics Dashboard</div>
-          <p class="proj-desc">Consolidated 12 manual weekly reports into one live Power BI dashboard tracking DAU/MAU, campaign ROI, cohort repeat rate, and channel contribution. Uncovered WhatsApp outperforming email 2.4x on CTR.</p>
-          <div class="proj-metrics">
-            <span class="metric">12 Reports to 1</span><span class="metric">2.4x CTR Insight</span><span class="metric">C-Suite Adoption</span>
-          </div>
-          <div class="proj-stack">
-            <span class="stack-tag">Power BI</span><span class="stack-tag">SQL</span><span class="stack-tag">Python</span><span class="stack-tag">Google Sheets</span>
+            <span class="stack-tag">Python</span><span class="stack-tag">SQL</span><span class="stack-tag">Amplitude</span><span class="stack-tag">Power BI</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- AWARDS -->
   <section id="awards">
     <div class="section-inner">
       <div class="reveal" style="text-align:center;margin-bottom:2.5rem">
         <div class="section-label" style="color:var(--gold-light)">Recognition</div>
-        <h2 class="section-title" style="color:#fff">Awards &amp; Certifications</h2>
+        <h2 class="section-title" style="color:#fff">Awards</h2>
       </div>
       <div class="awards-grid reveal">
         <div class="award-card">
           <span class="award-icon">&#127942;</span>
-          <div class="award-title">Spotlight Award</div>
-          <div class="award-org">Snapdeal &mdash; Outstanding Contribution to CRM &amp; Retention</div>
-          <div class="award-year">2024</div>
+          <div class="award-title">On Spot Award</div>
+          <div class="award-org">Reliance Group &mdash; Head of Planning &amp; Intelligence, for designing robust pipelines handling complex and rogue data</div>
+          <div class="award-year">Nov 2024</div>
         </div>
         <div class="award-card">
           <span class="award-icon">&#127941;</span>
-          <div class="award-title">Best Analyst of the Year</div>
-          <div class="award-org">OYO Rooms &mdash; Excellence in Customer Lifecycle Analytics</div>
-          <div class="award-year">2022</div>
-        </div>
-        <div class="award-card">
-          <span class="award-icon">&#128250;</span>
-          <div class="award-title">Google Analytics IQ</div>
-          <div class="award-org">Google &mdash; Certified in GA4 &amp; digital analytics</div>
-          <div class="award-year">Active</div>
-        </div>
-        <div class="award-card">
-          <span class="award-icon">&#128104;</span>
-          <div class="award-title">SQL for Data Science</div>
-          <div class="award-org">Coursera / UC Davis</div>
-          <div class="award-year">2021</div>
+          <div class="award-title">Make It Happen Award</div>
+          <div class="award-org">Myntra &mdash; Marketing Head, for identifying critical funnel breakages and maintaining comprehensive KPI tracking across all funnel stages</div>
+          <div class="award-year">Jun 2023</div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- EDUCATION -->
   <section id="education">
     <div class="section-inner">
       <div class="reveal">
@@ -441,41 +417,41 @@ footer span{color:var(--gold-light)}
         <div class="edu-card">
           <div class="edu-icon">&#127979;</div>
           <div>
-            <div class="edu-degree">MBA &mdash; Marketing &amp; Analytics</div>
-            <div class="edu-school">Symbiosis Institute of Business Management</div>
-            <div class="edu-year">2018 &mdash; 2020 &middot; Pune</div>
+            <div class="edu-degree">Post Graduate Programme in Data Science (85%)</div>
+            <div class="edu-school">Great Lakes Institute of Management</div>
+            <div class="edu-year">Aug 2019 &mdash; Mar 2020</div>
+            <div class="edu-note">Coursework: SQL &amp; RDBMS, Statistical Decision Making, Machine Learning &amp; Algorithms</div>
           </div>
         </div>
         <div class="edu-card">
           <div class="edu-icon">&#127891;</div>
           <div>
-            <div class="edu-degree">B.Tech &mdash; Electronics &amp; Communication</div>
-            <div class="edu-school">Dr. A.P.J. Abdul Kalam Technical University</div>
-            <div class="edu-year">2014 &mdash; 2018 &middot; Lucknow</div>
+            <div class="edu-degree">Bachelor of Engineering &mdash; Electronics &amp; Communication (69%)</div>
+            <div class="edu-school">Rajiv Gandhi Technical University, Bhopal</div>
+            <div class="edu-year">Aug 2006 &mdash; Jul 2010</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
     <div class="section-inner">
       <div class="reveal">
         <div class="section-label">Get In Touch</div>
         <h2 class="section-title">Let's work together</h2>
-        <p class="section-desc">Open to CRM Analyst, Customer Analytics, Business Intelligence, and Growth roles in India and the Gulf. Available immediately.</p>
+        <p class="section-desc">Open to CRM Analyst, Customer Retention, Marketing Analytics, and BI roles in India (Noida, Gurugram, Mumbai, Pune) and the Gulf (Dubai, Riyadh, Abu Dhabi, Doha). 30-day notice. Visa sponsorship accepted.</p>
         <div class="contact-buttons">
           <a href="mailto:arulvishwakarma@gmail.com" class="btn-contact btn-email">&#9993; arulvishwakarma@gmail.com</a>
           <a href="https://www.linkedin.com/in/arul-vishwakarma" target="_blank" rel="noopener" class="btn-contact btn-li">&#128279; LinkedIn</a>
-          <a href="mailto:arulvishwakarma@gmail.com" class="btn-contact btn-phone">&#128222; Available on request</a>
+          <a href="tel:+916366506813" class="btn-contact btn-phone">&#128222; +91 6366506813</a>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 <span>Arul Vishwakarma</span>. Single-file HTML &mdash; deploy free on GitHub Pages.</p>
+    <p>&copy; 2025 <span>Arul Vishwakarma</span>. Single-file HTML &mdash; hosted free on GitHub Pages.</p>
   </footer>
 
   <script>
